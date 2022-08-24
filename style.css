@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  background-color: #edeff4;
+  line-height: 1.7;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: 800;
+  color: #fff;
+  background: #35ad79;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+html {
+  font-family: 'Alata';
+}
+
+li {
+  list-style: none;
+}
+
+header, footer {
+  padding: 10px;
+  background-color: #2c2d31;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 60px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  padding: 5px 10px;
+  font-weight: 700;
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.head-section {
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/head-section-bg.jpg");
+  background-size: cover;
+  height: 50vh;
+}
+
+.head-section button {
+  margin-top: 20px;
+}
+
+.headers-h {
+  text-transform: uppercase;
+  padding: 20vh 50px 0px 50px;
+}
+
+.headers-h h1 {
+  font-size: 2rem;
+  color: #afe1ff;
+}
+
+h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+.section-content {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+section {
+  padding: 40px 100px;
+}
+
+.vision {
+  color: #fff;
+  background: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 50%)),
+    url("./img/vision-bg.jpg");
+  background-size: cover;
+}
+
+.section-img {
+  text-align: center;
+}
+
+.history {
+  color: #fff;
+  background: linear-gradient(rgb(0 0 0), rgb(0 0 0 / 50%)),
+    url("./img/history-bg.jpg");
+  background-size: cover;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.review {
+  padding: 0 30px;
+}
+
+form {
+  padding: 25px;
+  margin: 25px;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #f5f5f5;
+}
+
+input,
+textarea {
+  width: calc(100% - 18px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #1c87c9;
+  outline: none;
+}
+input::placeholder {
+  color: #666;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #1c87c9;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+button:hover {
+  background: #2371a0;
+}
+
+@media (max-width: 459px) {
+  .section-content {
+    grid-template-columns: 1fr;
+  }
+  .section-content img {
+    width: 100%;
+  }
+  .headers-h {
+    padding: 0;
+  }
+  section {
+    padding: 40px 40px;
+  }
+}
